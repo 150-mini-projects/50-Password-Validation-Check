@@ -13,7 +13,7 @@ const requirements = [
 passwordInput.addEventListener("keyup", (e) => {
   requirements.forEach((item) => {
     const isValid = item.regex.test(e.target.value);
-    const requirementItem = requirementList[item.index]; // Fix the property name
+    const requirementItem = requirementList[item.index];
 
     if (isValid) {
       requirementItem.firstElementChild.className = "fa-solid fa-check";
