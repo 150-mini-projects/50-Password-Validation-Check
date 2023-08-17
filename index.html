@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Validation Check</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="pass-field">
+        <input type="password" placeholder="Create your password" />
+        <i class="fa-solid fa-eye"></i>
+      </div>
+      <div class="content">
+        <p>Password must contain at least</p>
+        <ul class="requirement-list">
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 8 characters length</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 number (0,1,..., 9)</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 lowercase letter (a, b, ..., z)</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 uppercase letter (A, B, ..., Z)</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 special character (!, +, ..., $)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
